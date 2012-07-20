@@ -32,7 +32,7 @@ if not os.path.exists("modules/twss.txt"):
     second_re = re.compile(r'"style30">.*</span>')
 
     print "Now creating TWSS database. This will take a few minutes.",
-    for page in range(1,148):
+    for page in range(1,227):
         sys.stdout.flush()
         print ".",
         curr_url = url + str(page)
@@ -43,7 +43,7 @@ if not os.path.exists("modules/twss.txt"):
                 lowercase =  inner_re.findall(story)[0].lower()
                 f.write(re.sub("[^\w\s]", "", lowercase) + "\n")
 
-    for page in range(1,146):
+    for page in range(1,165):
         sys.stdout.flush()
         print ".",
         curr_url = url2 + str(page)
