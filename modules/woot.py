@@ -39,7 +39,7 @@ def woot(jenni, input):
 
     output = base.format(item, price, soldout, condition, quantity,
         woot_off, link)
-    jenni.reply(output)
+    jenni.say(output)
 woot.commands = ['woot']
 woot.priority = 'low'
 woot.rate = 30
