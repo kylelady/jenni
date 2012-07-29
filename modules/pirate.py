@@ -24,7 +24,7 @@ def pirate(jenni, input):
     if r is not None:
         jenni.say(r.group(1).decode('string_escape'))
 
-pirate.rule = r'y?a+r+$'
+pirate.rule = r'(.*\s|^)y?a+r+(\s|$)'
 pirate.priority = 'low'
 pirate.rate = 30
 
